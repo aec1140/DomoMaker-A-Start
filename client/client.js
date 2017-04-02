@@ -20,7 +20,7 @@ const sendAjax = (action, data) => {
 
       handleError(messageObj.error);
     }
-  });        
+  });
 }
 
 $(document).ready(() => {
@@ -36,7 +36,7 @@ $(document).ready(() => {
 
     if($("#pass").val() !== $("#pass2").val()) {
       handleError("RAWR! Passwords do not match");
-      return false;           
+      return false;
     }
 
     sendAjax($("#signupForm").attr("action"), $("#signupForm").serialize());
@@ -58,7 +58,7 @@ $(document).ready(() => {
 
     return false;
   });
-  
+
   $("#domoForm").on("submit", (e) => {
     e.preventDefault();
 
